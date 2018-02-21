@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<meta charset="utf-8">
+		<title>Simple Canvas Game</title>
+		<style>
+			.wrap {
+				background: linear-gradient(to bottom, rgb(90, 63, 55), rgb(44, 119, 68));
+				text-align: center;
+			}
+			.cyberUniverse {
+				 background-color:#001B33;
+			}
+			.controlButton{
+				width: 100px;
+				height: 20px;
+				position: fixed;
+			}
+			.startButton{
+				top: 10px;
+				left: 10px;
+			}
+			.quicker{
+				top: 10px;
+				left: 110px;
+			}
+			.slower{
+				top: 10px;
+				left: 210px;
+			}
+			.stopButton{
+				top: 30px;
+				left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+ 				<canvas id="universe" class="cyberUniverse" width="1000" height="1000"></canvas>
+		</div>
+		<button type="button" class="startButton controlButton">START</button>
+		<button type="button" class="quicker controlButton" data-type="decrement">Quicker</button>
+		<button type="button" class="slower controlButton" data-type="increment">Slower</button>
+		<button type="button" class="stopButton controlButton">STOP</button>
+			<script src="game.js"></script>
+	</body>
+</html>
